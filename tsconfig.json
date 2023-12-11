@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "include": ["src", "./db/**/*", "./scripts/**/*", "./generated/**/*"],
+
+  "exclude": [
+    "node_modules",
+    "./coverage",
+    "./dist",
+    "__tests__",
+    "jest.config.js"
+  ],
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "lib": ["ES2022"],
+    "module": "CommonJS",
+    "target": "ES2022",
+    "sourceMap": true,
+    "inlineSources": true,
+    "sourceRoot": "/",
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "useUnknownInCatchVariables": true,
+  },
+
+  "ts-node": {
+    "files": true
+  }
+}
