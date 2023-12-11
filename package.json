@@ -1,5 +1,5 @@
 {
-  "name": "@cappsule/backend",
+  "name": "rc-repro",
   "version": "1.0.0",
   "main": "src/index.tx",
   "license": "MIT",
@@ -8,9 +8,6 @@
     "clean": "rimraf ./dist",
     "start:dev": "nodemon --delay 250ms --transpile-only src/index.ts",
     "start:prod": "nodemon --delay 250ms dist/index.js"
-  },
-  "prisma": {
-    "seed": "ts-node db/cappsule/seed.ts"
   },
   "dependencies": {
     "class-validator": "^0.14.0",
